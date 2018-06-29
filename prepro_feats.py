@@ -31,6 +31,9 @@ def extract_frames(video, dst):
         subprocess.call(video_to_frames_command,
                         stdout=ffmpeg_log, stderr=ffmpeg_log)
 
+        
+#Sample some frames from video and then convert to rgb and then pass through model to get features 
+#and the save them.
 
 def extract_feats(params, model, load_image_fn):
     global C, H, W
